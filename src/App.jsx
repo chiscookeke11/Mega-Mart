@@ -8,10 +8,10 @@ const App = () => {
     <div className='bg-white' >
       <Header/>
  
+ <main>
         <HeroSection/>
-        <div>
            <SmartPhonesDisplay/>
-        </div>
+           </main>
        
 
     </div>

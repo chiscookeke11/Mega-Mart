@@ -15,7 +15,7 @@ return (
   <>
     {/* categories open */}
     <div
-      className={`border-[#EDEDED] border-b w-[100vw] px-[3%] flex flex-row gap-3 items-center justify-evenly  transition-all duration-300 transform overflow-y-hidden overflow-x-auto  z-0  ${showCategories ? "max-h-[200px] py-3" : "h-0 z-0 py-0"
+      className={`border-[#EDEDED] border-b w-full m px-[2%] gap-3 flex flex-row items-center justify-evenly  transition-all duration-300 transform overflow-y-hidden overflow-x-auto  z-0  ${showCategories ? "max-h-[200px] py-3" : "h-0 z-0 py-0"
         } relative`}
     >
 
