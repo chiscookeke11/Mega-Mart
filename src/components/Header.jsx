@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { FaList, FaMapMarkerAlt, FaSearch, FaShoppingCart, FaTag, FaTruck, FaUser } from 'react-icons/fa'
+import {  FaList, FaMapMarkerAlt, FaSearch, FaShoppingCart, FaTag, FaTruck, FaUser } from 'react-icons/fa'
+import { CategoriesNav } from './CategoriesNav';
 
 const Header = () => {
 
@@ -11,18 +12,23 @@ const Header = () => {
             if (window.scrollY > 1) {
                 setIsFixed(true)
             }
-            else{
+            else {
                 setIsFixed(false)
             }
         }
-        window.addEventListener('scroll', handleScroll); 
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     });
 
- 
+    
+    const [showCategories, setShowCategories] = useState(false);
+    const displayCategories = () => {
+        setShowCategories(prevShowCategories => !prevShowCategories)
+    }
+
 
 
 
@@ -31,11 +37,11 @@ const Header = () => {
 
 
     return (
-        <div className='w-full ' >
+        <div className='w-full  ' >
 
             {/* top-nav open */}
 
-            <div className="top-nav flex flex-row items-center gap-4 justify-center lg:justify-between md:justify-between flex-wrap px-[5%] p-3 text-[14px] text-[#666666] font-normal bg-[#F5F5F5] text-center ">
+            <div className="top-nav flex flex-row items-center gap-4 justify-center lg:justify-between md:justify-between flex-wrap px-[5%] p-3 text-[14px]  z-[999]  relative text-[#666666] font-normal bg-[#F5F5F5] text-center ">
                 <h5>Welcome to worldwide Megamart!</h5>
 
 
@@ -52,9 +58,9 @@ const Header = () => {
 
             {/* main-nav open */}
 
-            <nav className={`flex flex-row items-center justify-between gap-2  px-[5%] py-4 flex-wrap top-0 left-0 w-full z-[10] bg-white ${isFixed? "fixed" : ""} `} >
+            <nav className={`flex flex-row items-center justify-between gap-2  px-[5%] py-4 flex-wrap top-0 left-0 w-full border-[#EDEDED] border-b z-[999] relative bg-white ${isFixed ? "fixed" : ""} `} >
                 <div className='flex gap-4 items-center ' >
-                    <div className="menu-btn w-10 h-10 rounded-[10px] bg-[#F3F9FB] flex flex-col gap-1 items-start justify-center p-2 cursor-pointer transform active:scale-[0.9] ">
+                    <div onClick={displayCategories} className="menu-btn w-10 h-10 rounded-[10px] bg-[#F3F9FB] flex flex-col gap-1 items-start justify-center p-2 cursor-pointer transform active:scale-[0.9] ">
                         <span className=' w-[95%] h-1 bg-[#008ECC] rounded-[5px] ' ></span>
                         <span className=' w-[75%] h-1 bg-[#008ECC] rounded-[5px] '></span>
                         <span className=' w-[55%] h-1 bg-[#008ECC] rounded-[5px] '></span>
@@ -72,7 +78,7 @@ const Header = () => {
                             <input
                                 type="search"
                                 placeholder="Search essentials, groceries and more..."
-                                className="p-1 border-none outline-none bg-transparent placeholder-[#666666] w-full"
+                                className="p-1 border-none outline-none bg-transparent placeholder-[#666666] w-2/3"
                             />
                         </span>
                         <FaList className="text-[#008ECC] font-normal text-xl cursor-pointer" />
@@ -81,13 +87,13 @@ const Header = () => {
 
 
                     <span className='flex flex-row items-center justify-center'>
-    <button className='hidden lg:flex md:flex sm:hidden  flex-row items-center justify-center gap-2 py-1 px-3  text-sm bg-white border-r border-[#D9D9D9] ml-1 outline-none whitespace-nowrap'>
-        <FaUser className='text-[#008ECC]' /> Sign Up/Sign In
-    </button>
-    <button className='flex flex-row items-center justify-center gap-2 py-1 px-3 text-sm bg-white mr-1 outline-none border-none whitespace-nowrap'>
-        <FaShoppingCart className='text-[#008ECC]' /> Cart
-    </button>
-</span>
+                        <button className='hidden lg:flex md:flex sm:hidden  flex-row items-center justify-center gap-2 py-1 px-3  text-sm bg-white border-r border-[#D9D9D9] ml-1 outline-none whitespace-nowrap'>
+                            <FaUser className='text-[#008ECC]' /> Sign Up/Sign In
+                        </button>
+                        <button className='flex flex-row items-center justify-center gap-2 py-1 px-3 text-sm bg-white mr-1 outline-none border-none whitespace-nowrap'>
+                            <FaShoppingCart className='text-[#008ECC]' /> Cart
+                        </button>
+                    </span>
 
 
                 </div>
@@ -96,6 +102,11 @@ const Header = () => {
 
             {/* main-nav close */}
 
+
+
+<CategoriesNav 
+showCategories={showCategories}
+/>
 
 
 
