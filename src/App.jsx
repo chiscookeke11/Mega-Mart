@@ -1,14 +1,19 @@
 import React from 'react'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import SmartPhonesDisplay from './components/SmartPhonesDisplay'
 
 const App = () => {
   return (
-    <div className='w-full bg-white' >
+    <div className='bg-white' >
       <Header/>
-      <main  >
+ 
         <HeroSection/>
-      </main>
+        <div>
+           <SmartPhonesDisplay/>
+        </div>
+       
+
     </div>
   )
 }
