@@ -3,7 +3,7 @@ import { FaChevronRight } from 'react-icons/fa'
 
 const SmartPhonesDisplay = () => {
   return (
-    <div className='mx-auto mt-5 w-full bg-white px-[7%] text-sm ' >
+    <div className='mx-auto mt-5 w-full bg-white px-[7%] text-sm min-h-[30vh]' >
         <header className='flex flex-row items-center justify-between w-full py-3 border-b border-[#EDEDED] ' >
             <h2>Grab the best deal on <span>  Smartphones</span></h2>
             <h2 className='flex flex-row items-center gap-3'  ><span>See All</span>   <FaChevronRight/> </h2>
