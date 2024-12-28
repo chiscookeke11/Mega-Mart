@@ -36,7 +36,6 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            setShowScrollButton(scrollTop > 0);
         };
 
         window.addEventListener("scroll", handleScroll);
