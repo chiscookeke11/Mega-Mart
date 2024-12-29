@@ -3,6 +3,7 @@ import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import SmartPhonesDisplay from './components/SmartPhonesDisplay'
 import TopCatgories from './components/TopCatgories'
+import ElectronicBrands from './ElectronicBrands'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <HeroSection/>
            <SmartPhonesDisplay/>
            <TopCatgories/>
+           <ElectronicBrands/>
            </main>
        
 
