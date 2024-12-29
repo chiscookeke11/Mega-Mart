@@ -1,74 +1,74 @@
 export const phones = [
     {
         id:"1",
-        name: "tecno note five",
-        currentPrice: "70000",
-        oldPrice: "90000",
+        name: "Galaxy S22 Ultra",
+        currentPrice: "32999",
+        oldPrice: "74999",
         image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735394389/phone1_guqgvy.png"
 
     },
     {
         id: "2",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
+        name: "Galaxy M13 (4GB | 64 GB )",
+        currentPrice: "10499",
+        oldPrice: "14999",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735473858/phone_5_vebg7n.png"
 
     },
     {
         id: "3",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
+        name: "Galaxy M33 (4GB | 64 GB )",
+        currentPrice: "16999",
+        oldPrice: "24999",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735473859/phone_2_f7dgej.png"
 
     },
     {
         id: "4",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
+        name: "Galaxy M53 (4GB | 64 GB )",
+        currentPrice: "31999",
+        oldPrice: "40999",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735473859/phone_4_gffdsv.png"
 
     },
     {
         id: "5",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
+        name: "Galaxy S22 Ultra",
+        currentPrice: "67999",
+        oldPrice: "85999",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735473859/phone_3_dnhhp1.png"
 
+    }
+]
+
+export const topCategories = [
+    {
+        name: "Mobile",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735394389/phone1_guqgvy.png"
     },
     {
-        id: "6",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
-
+        name: "Cosmetics",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477336/cosmetics_avihuc.png"
     },
     {
-        id: "7",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
-
+        name: "Electronics",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477337/electronics_snfe0j.png"
     },
     {
-        id: "8",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
-
+        name: "Furniture",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477336/furniture_wxsumy.png"
     },
     {
-        id: "9",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
-
+        name: "Watches",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477336/watches_yasgl8.png"
     },
     {
-        id: "10",
-        name: "tecno note six",
-        currentPrice: "9000",
-        oldPrice: "90000"
-
+        name: "Decor",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477336/Decor_cosohn.png"
     },
- 
+    {
+        name: "Accessories",
+        image: "https://res.cloudinary.com/dwedz2laa/image/upload/v1735477336/jewelry_sjtbns.png"
+    },
+
 ]
