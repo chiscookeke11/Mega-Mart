@@ -13,7 +13,7 @@ const SmartPhonesDisplay = () => {
  
 
   return (
-    <div className='mx-auto mt-5 w-full my-3 bg-white px-[7%] text-sm lg:text-md min-h-[20vh]' >
+    <div className='mx-auto mt-5 w-full my-3 bg-white px-[7%] text-sm lg:text-base min-h-[20vh]' >
         <header className='flex flex-row items-center justify-between w-full py-3 border-b border-[#EDEDED] relative' >
             <h2>Grab the best deal on <span  className='text-[#008ECC] font-bold ' >  Smartphones</span></h2>
             <h2 className={`flex flex-row items-center gap-3 cursor-pointer ${sliced >= phones.length? "cursor-not-allowed" : "cursor-pointer" } `}   ><span>See All</span>   <FaChevronRight  className='text-[#008ECC]'/> </h2>
