@@ -5,6 +5,7 @@ import SmartPhonesDisplay from './components/SmartPhonesDisplay'
 import TopCatgories from './components/TopCatgories'
 import ElectronicBrands from './ElectronicBrands'
 import DailyEssentials from './components/DailyEssentials'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
            <TopCatgories/>
            <ElectronicBrands/>
            <DailyEssentials/>
+           <Footer/>
            </main>
        
 

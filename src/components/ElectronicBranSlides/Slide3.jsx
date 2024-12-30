@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaXiaomi } from 'react-icons/fa';
+import { FaBalanceScaleLeft } from 'react-icons/fa'
 
 const Slide3 = () => {
   return (
@@ -10,7 +10,7 @@ const Slide3 = () => {
           <div className="deets  flex items-center justify-center flex-col gap-3">
               <h3 className='bg-[#FFD1B0] text-[#222222] py-1 px-2 text-center text-xs rounded-[8px] ' >XIAOMI</h3>
               <span className=' bg-[#FF6900] w-[45px] h-[45px] rounded-[14px] flex items-center justify-center text-4xl text-[#222222] ' >
-              <FaXiaomi size={50} color="orange" />
+              <FaBalanceScaleLeft/>
               </span>
               <p className='text-lg text-[#222222] font-[500]  ' >UP to 80% OFF</p>
           </div>
